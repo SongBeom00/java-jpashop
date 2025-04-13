@@ -42,7 +42,7 @@ public class OrderService {
         //주문 상품 생성
         OrderItem orderItem = OrderItem.createOrderItem(item, item.getPrice(), count);
 
-        //주문 상품 생성
+        //주문 상품 생성 -> casecade 옵션
         Order order = Order.createOrder(member, delivery, orderItem);
 
         //주문 저장
